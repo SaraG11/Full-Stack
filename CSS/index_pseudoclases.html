@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClases</title>
+    <style>
+        button{
+            background: #052f42;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: #a7a7a7;
+            color: #052f42;
+        }
+        a{
+            color: #525151;
+        }
+        a:active{
+            color: rgb(212, 109, 109);
+        }
+        input:focus{
+            background: wheat;
+        }
+        ul li:first-child{
+            color: blue;
+        }
+        ul li:last-child{
+            color: red;
+        }
+        ul li:nth-child(4){
+            color: orange;
+        }
+        ol li:not(:last-child){
+            color: yellow;
+        }
+        ol li:not(.not_color){
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Button</button><br><br>
+    <a href="https://www.google.com/" target="_blank">Ir a la pagina</a><br><br>
+    <input type="text"><br><br>
+    <ul>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+    </ul><br><br>
+    <ol>
+        <li>Lorem impsim</li>
+        <li>Lorem impsim</li>
+        <li class="not_color">Lorem impsim</li>
+        <li>Lorem impsim</li>
+        <li>Lorem impsim</li>
+        <li>Lorem impsim</li>
+    </ol>
+</body>
+</html>

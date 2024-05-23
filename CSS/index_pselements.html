@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos</title>
+    <style>
+        p:nth-child(1):after{
+            content: 'HOLA';
+        }
+        p:nth-child(1):before{
+            content: '@';
+        }
+        p:nth-child(2)::first-letter{
+            font-size: 300%;
+        }
+        p:nth-child(3)::first-line{ /*cambia, tranforma la primera linea de un parrafo*/
+            text-transform: uppercase;
+        }
+        p:nth-child(4)::selection{
+            background: #ff0000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officiis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officiis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officiis?</p>
+
+</body>
+</html>
