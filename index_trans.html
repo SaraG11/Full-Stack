@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color:  #5499c7;
+            /* esto es para la transformacion
+            transition: backgroud-color 3s ease-in,
+            transform 3s linear;*/
+            animation-name: myanimation;
+            animation-duration: 10s;
+            position: relative;
+            animation-timing-function: linear;
+        }
+        /* se usa para la transformacion
+        .box:hover{
+            background-color:  #f5b041;
+            transform: scale(1.6);
+        }*/
+        @keyframes myanimation{
+        /*linea de tiempo en base a un porcentaje*/
+            0%{
+                top: 0;left: 0;
+            }
+            25%{
+                top: 0;left: 500px;
+            }
+            50%{
+                top: 500px;left: 500px;
+            }
+            75%{
+                top: 500px; left: 0;
+            }
+            100%{
+                top: 0;left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
