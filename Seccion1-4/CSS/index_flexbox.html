@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            gap: 10px; /*agrega espaciado, pero no en la primera ni en la ultima*/
+            flex-direction: row;
+            flex-wrap: wrap; /*si la caja no puede estar en el espacio que sobra, se irá a donde si*/
+            /*justify-content: flex-end; justificar los elementos*/
+            /*si queremos que las cajas/hijos ocupen todo el espcio del contenedor padre 
+            justify-content: space-between;*/
+            justify-content: space-around;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(65, 135, 214);
+            /*display: inline-block; No es la mejor forma para alinear elementos*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
