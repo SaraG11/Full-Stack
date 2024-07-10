@@ -79,3 +79,18 @@ table th,td{
 .text-uppercase{
     text-transform: uppercase;
 }
+
+#error-message{
+    color: #d14545;
+    font-size: 0.8rem;
+}
+.btn-delete{
+    background-color: #d14545;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 28px;
+}
+.btn-delete ion-icon{
+    font-size: 1rem;
+}
