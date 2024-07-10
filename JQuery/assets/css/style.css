@@ -1,0 +1,14 @@
+.container{
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+h2{
+    font-family: "Verdana";
+    color: white;
+    text-align: center;
+}
+select{
+    width: 100px;
+}
