@@ -44,16 +44,29 @@
     </header>
 
     <section class="home d-flex align-center">
-            <video src="./assets/media/1437396-uhd_3840_2160_24fps.mp4" autoplay muted loop></video>
-            
-            <div class="content d-flex flex-column justify-content-center">
-                <h1 class="text-white"><strong class="fw-800 text-1 font-rosario">
+            <video id="video-1" class="video-slide active" src="./assets/media/1437396-uhd_3840_2160_24fps.mp4" autoplay muted loop></video>
+            <video id="video-2" class="video-slide" src="./assets/media/1204902-hd_1920_1080_30fps.mp4" autoplay muted loop></video>
+            <video id="video-3" class="video-slide" src="./assets/media/856478-uhd_4096_2160_25fps.mp4" autoplay muted loop></video>
+
+            <div class="content d-flex flex-column justify-content-center text-center">
+                <div class="item-slide mb-3">
+                    <img src="./assets/media/travel.png" style="width: 250px; margin: auto;">
+                    <h1 class="text-white mb-1 mt-2"><strong class="fw-800 text-1 font-rosario">
                     Explore.</strong><br> 
                     new horizons
-                </h1>
-                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo assumenda doloremque libero obcaecati eum eos excepturi, ex voluptates ratione laudantium eveniet nobis maxime sit illo saepe harum numquam labore consequuntur?</p>
+                    </h1>
+                <p class="text-white px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo assumenda doloremque libero obcaecati eum eos excepturi, ex voluptates ratione laudantium eveniet nobis maxime sit illo saepe harum numquam labore consequuntur?</p>
                 
+                </div>
+                <div class="nav-slides">
+                    <button class="bt-slide" data-video="video-1"></button>
+                    <button class="bt-slide" data-video="video-2"></button>
+                    <button class="bt-slide" data-video="video-3"></button>
+    
+                </div>
             </div>
+
+     
        
     </section>
     
