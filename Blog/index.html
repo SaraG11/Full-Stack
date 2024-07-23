@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- cabecera -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navy py-3" data-bs-theme="dark">
+            <div class="container">
+              <img src="./assets/img/logo.jpg" alt="" style="height: 50px;"><a class="navbar-brand">
+                <span class="px-3" style="font-weight: 700;">Navbar</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Help</a>
+                  </li>
+                </ul>
+                <div class="dropdown text-end">
+                    <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://github.com/mdo.png" alt="mdo" width="37" height="37" class="rounded-circle me-2">
+                      <div class="d-flex flex-column text-start">
+                        <span style="font-weight: 700;">Sara G</span>
+                        <small class="text-muted">sara.g@gmail.com</small>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                      <li><a class="dropdown-item" href="#">New project...</a></li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- carrusel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/blog1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="bottom: 30% !important;">
+              <h2 class="fw-bold" style="font-size: 3rem !important;">First slide label</h2>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/blog2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="bottom: 30% !important;">
+              <h2 class="fw-bold" style="font-size: 3rem !important;">Second slide label</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/blog3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="bottom: 30% !important;">
+              <h2 class="fw-bold" style="font-size: 3rem !important;">Third slide label</h2>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- cartas -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1 class="fw-bolder">Best Posts</h1>
+                <span class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aut dolore accusamus!</span>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200/250" alt="" class="w-100 h-100">
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <span class="fw-bold" style="color: black;">Word</span>
+                                <h4 class="fw-semibold">Lorem Impsum</h4>
+                                <div class="mb-3">
+                                    <small class="text-muted">July 23</small>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ad.</p>
+                                <a href="#" style="text-decoration: none;">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200/250" alt="" class="w-100 h-100">
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <span class="fw-bold" style="color: black;">Word</span>
+                                <h4 class="fw-semibold">Lorem Impsum</h4>
+                                <div class="mb-3">
+                                    <small class="text-muted">July 23</small>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ad.</p>
+                                <a href="#" style="text-decoration: none;">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- entradas  -->
+    <div style="background-image: url(./assets/img/fabric_1.png);">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">Sample blog post</h2>
+                    <ul class="d-flex justify-content-end">
+                        <li class="me-3">
+                            <span class="text-primary " style="font-size: 15px;">23 July</span>
+                        </li>
+                        <li class="me-3">
+                            <span class="text-primary " style="font-size: 15px;">Categoria 1</span>
+                        </li>
+                        <li>
+                            <span class="badge text-bg-warning">Warning</span>
+                        </li>
+                    </ul>
+                    <div>
+                        <img src="./assets/img/2.jpg" class="w-100 mb-4">
+                        <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet soluta necessitatibus voluptates odio quos consectetur ratione cumque dolorem, fugit hic, numquam nulla tenetur modi sapiente pariatur a, quasi autem.</p>
+                        <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, quia itaque quae enim placeat illum officia sequi? Assumenda tempore perferendis dolorum libero, est, sequi dicta minus voluptatum alias quos illo harum nisi? Pariatur iste dolore est rerum, reprehenderit ut unde sequi. Necessitatibus illum non voluptatum quae. Fuga, modi facilis? Incidunt accusamus consectetur reprehenderit, nisi, itaque magni illo pariatur, debitis molestias libero voluptas quod? Magnam, necessitatibus est minus laborum beatae magni fugit accusantium provident, placeat, autem illo eveniet! Voluptates, natus reiciendis.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="./assets/img/1.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam molestiae iusto nesciunt accusantium odio debitis quia et quisquam deleniti eaque. Ea adipisci fuga, quia soluta velit dolorum error possimus consectetur molestias exercitationem neque enim provident iure tenetur facere corrupti placeat distinctio iusto vero tempora illum. Facilis delectus enim fugit animi temporibus. Velit aut vitae, modi laboriosam sequi exercitationem quod molestias.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-5">
+                        <div>
+                            <span class="badge text-bg-dark">#Lorem</span>
+                            <span class="badge text-bg-dark">#Impsum</span>
+                            <span class="badge text-bg-dark">#Lorem</span>
+                            <span class="badge text-bg-dark">#Impsum</span>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                              </svg>Facebook</button>
+                              <button class="btn btn-danger btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                              </svg>Youtube</button>
+                              <button class="btn btn-primary btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                              </svg>Twitter</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget mb-5">
+                        <input type="search" placeholder="Search" class="form-control">
+                        <small class="text-muted">Lorem ipsum dolor sit amet.</small>
+                    </div>
+                    <div class="widget mb-5">
+                        <h5 class="fw-bold mb-4">Recent Post</h5>
+                        <div class="row mb-3">
+                            <div class="col-lg-4">
+                                <img src="./assets/img/3.jpg" class="w-100">
+
+                            </div>
+                            <div class="col-lg-8 d-flex align-items-center">
+                                <div>
+                                    <h6 class="fw-semibold">Example blog post title</h6>
+                                    <small>January 15, 2024 </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-4">
+                                <img src="./assets/img/4.jpg" class="w-100">
+
+                            </div>
+                            <div class="col-lg-8 d-flex align-items-center">
+                                <div>
+                                    <h6 class="fw-semibold">Example blog post title</h6>
+                                    <small>January 15, 2024 </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="./assets/img/5.jpg" class="w-100">
+
+                            </div>
+                            <div class="col-lg-8 d-flex align-items-center">
+                                <div>
+                                    <h6 class="fw-semibold">Example blog post title</h6>
+                                    <small>January 15, 2024 </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget mb-5">
+                        <h5 class="fw-bold mb-4">Elsewhere</h5>
+                        <div class="card" style="width: 18rem;">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                          </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-navy text-center py-4">
+        <img src="./assets/img/logo.jpg" alt="" style="height: 60px;"><a class="navbar-brand">
+        <p class="mb-0 text-white">Blog template built for Bootstrap by @mdo.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
